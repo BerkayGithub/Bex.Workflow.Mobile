@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/listview_delete"
+        android:icon="@drawable/ic_delete_white_24dp"
+        android:title="Sil"/>
+
+    <item android:id="@+id/listview_archive"
+        android:icon="@drawable/ic_inbox_white_24dp"
+        android:title="Arşivle"/>
+
+    <group
+        android:icon="@drawable/ic_delete_white_24dp"
+        android:title="Diğer">
+        <item android:id="@+id/recycler_other1"
+            android:title="Diğer1"/>
+        <item android:id="@+id/recycler_other2"
+            android:title="Diğer2"/>
+    </group>
+</menu>

@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">InboxApp</string>
+
+    <string-array name="senders">
+        <item>Can</item>
+        <item>Burak</item>
+        <item>Berkay</item>
+        <item>Hande</item>
+        <item>Kaya</item>
+        <item>Emre</item>
+    </string-array>
+
+    <string-array name="subject">
+        <item>Uzaktan Eğitim</item>
+        <item>Random subject</item>
+        <item>Random subject</item>
+        <item>Random subject</item>
+        <item>Random subject</item>
+        <item>Random subject</item>
+    </string-array>
+
+    <string-array name="message">
+        <item>Değerli Öğrencilerimiz,
+
+
+
+Uzaktan Eğitim sürecinde sınav güvenliğinin sağlanması amacıyla sınavlarda Respondus LockDown Browser ve Respondus Monitor aracı kullanılacaktır. LockDown Browser, sınav başlatıldığında sınav ekranının tam ekran olmasını sağlar ve diğer uygulama ve dosyalara erişiminizi engeller. Monitor aracı ise bilgisayarınızın kamera ve mikrofonunu kullanarak yüzünüzün, kimlik kartınızın, bulunduğunuz ortamın görüntülenip kaydedilmesini sağlar. Araçların kullanım kılavuzları ekte sunulmuştur. Lütfen kılavuzları inceleyiniz ve kullanım videolarını izleyiniz.
+
+
+
+Sınavlarınızda başarılar dileriz.</item>
+        <item>This is a random message.</item>
+        <item>This is a random message.</item>
+        <item>This is a random message.</item>
+        <item>This is a random message.</item>
+        <item>This is a random message.</item>
+    </string-array>
+    <string name="title_activity_drawerpage">Drawerpage</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+
+    <string name="home_second">Home Second</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

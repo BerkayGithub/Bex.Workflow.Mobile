@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OpenMailActivity"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimaryDark"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:id="@+id/openmailtoolbar"
+        android:elevation="4dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/backOpen"
+                android:src="@drawable/ic_arrow_back_white_24dp"
+                android:layout_marginEnd="30dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/open_mail_pop_up"
+                android:src="@drawable/ic_more_vert_1"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="10dp"/>
+
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/konuOpen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Konu"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="10dp">
+
+        <TextView
+            android:id="@+id/gönderenOpen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gönderen"
+            android:textColor="@color/black"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/timeOpen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/gönderenOpen"
+            android:textSize="12sp"
+            android:text="14 Ağu 2020"
+            android:layout_marginVertical="4dp"
+            android:layout_marginHorizontal="20dp"/>
+
+        <TextView
+            android:id="@+id/AlıcıOpen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Alıcılar"
+            android:layout_below="@+id/gönderenOpen"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/İletiOpen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="20dp"
+        android:text="Merhaba, \n\nBu mesajın ileti kısmıdır."
+        android:textColor="@color/black"/>
+
+</LinearLayout>
