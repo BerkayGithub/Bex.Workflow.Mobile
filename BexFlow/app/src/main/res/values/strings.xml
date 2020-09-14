@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">BexFlow</string>
+    <string name="open">"Open"</string>
+    <string name="close">"Close"</string>
+    <string name="textview">TextView</string>
+    <string name="text_msg_date">14 Ağu 2020</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="login">Login</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="sign_in">Sign In</string>
+    <string name="bexfa">Bexfa</string>
+
+
+    <string-array name="senders">
+        <item>Can</item>
+        <item>Burak</item>
+        <item>Berkay</item>
+        <item>Hande</item>
+        <item>Kaya</item>
+        <item>Emre</item>
+    </string-array>
+
+    <string-array name="subject">
+        <item>Uzaktan Eğitim</item>
+        <item>Random subject</item>
+        <item>Random subject</item>
+        <item>Random subject</item>
+        <item>Random subject</item>
+        <item>Random subject</item>
+    </string-array>
+
+    <string-array name="message">
+        <item>Değerli Öğrencilerimiz,
+
+
+
+Uzaktan Eğitim sürecinde sınav güvenliğinin sağlanması amacıyla sınavlarda Respondus LockDown Browser ve Respondus Monitor aracı kullanılacaktır. LockDown Browser, sınav başlatıldığında sınav ekranının tam ekran olmasını sağlar ve diğer uygulama ve dosyalara erişiminizi engeller. Monitor aracı ise bilgisayarınızın kamera ve mikrofonunu kullanarak yüzünüzün, kimlik kartınızın, bulunduğunuz ortamın görüntülenip kaydedilmesini sağlar. Araçların kullanım kılavuzları ekte sunulmuştur. Lütfen kılavuzları inceleyiniz ve kullanım videolarını izleyiniz.
+
+
+
+Sınavlarınızda başarılar dileriz.</item>
+        <item>This is a random message.</item>
+        <item>This is a random message.</item>
+        <item>This is a random message.</item>
+        <item>This is a random message.</item>
+        <item>This is a random message.</item>
+    </string-array>
+</resources>

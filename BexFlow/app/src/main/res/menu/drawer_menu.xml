@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:checkableBehavior="single">
+        <item android:title="Posta Kutusu"
+            app:showAsAction="collapseActionView">
+            <menu>
+                <item android:id="@+id/inbox"
+                    android:icon="@drawable/ic_reply_black_24dp"
+                    android:title="Gelen Kutusu"/>
+                <item android:id="@+id/poolItem"
+                    android:icon="@drawable/ic_reply_black_24dp"
+                    android:title="Havuzdaki İşler"/>
+                <item android:id="@+id/parkedWorkItem"
+                    android:icon="@drawable/ic_folder_black_24dp"
+                    android:title="Park Edilen İşler"/>
+                <item android:id="@+id/MarkedWorkItem"
+                    android:icon="@drawable/ic_bookmark_black_24dp"
+                    android:title="İşaretlediğin İşler"/>
+                <item android:id="@+id/otherProcessItem"
+                    android:icon="@drawable/ic_remove_red_eye_black_24dp"
+                    android:title="Diğer Süreçlerden Beklediklerim"/>
+                <item android:id="@+id/SharedWorkItem"
+                    android:icon="@drawable/ic_play_for_work_black_24dp"
+                    android:title="Paydaş Olduğum İşler"/>
+                <item android:id="@+id/SentItem"
+                    android:icon="@drawable/ic_send_black_24dp"
+                    android:title="Giden Kutusu"/>
+                <item android:id="@+id/archiveItem"
+                    android:icon="@drawable/ic_archive_black_24dp"
+                    android:title="Arşiv"/>
+                <item android:id="@+id/myRequestsItem"
+                    android:icon="@drawable/ic_assignment_black_24dp"
+                    android:title="Taleplerim"/>
+            </menu>
+        </item>
+        <item android:title="Yeni İş Oluştur"
+            android:icon="@drawable/ic_create_white_24dp"
+            android:id="@+id/ic_is_olustur"/>
+        <item android:title="BEXFA TEKNOLOJİ VE YAZILIM A.Ş."
+            android:id="@+id/Site"/>
+    </group>
+</menu>
