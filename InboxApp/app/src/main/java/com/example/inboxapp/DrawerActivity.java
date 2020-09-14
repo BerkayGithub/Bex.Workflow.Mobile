@@ -31,17 +31,17 @@ public class DrawerActivity extends AppCompatActivity implements NavigationView.
 
         Toolbar toolbar = findViewById(R.id.toolbar);
         toolbar.setTitleTextColor(getResources().getColor(R.color.white));
-        setSupportActionBar(toolbar);
-
         drawer = findViewById(R.id.drawer_layout);
         NavigationView navigationView = findViewById(R.id.nav_view);
-        navigationView.bringToFront();
-        navigationView.setNavigationItemSelectedListener(this);
 
+        setSupportActionBar(toolbar);
+
+        navigationView.bringToFront();
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawer, toolbar,
                 R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.addDrawerListener(toggle);
         toggle.syncState();
+        navigationView.setNavigationItemSelectedListener(this);
 
         getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new InboxFragment()).commit();
         getSupportActionBar().setTitle("Gelen Kutusu");
@@ -62,30 +62,58 @@ public class DrawerActivity extends AppCompatActivity implements NavigationView.
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()) {
             case R.id.gelenItem:
+                if (item.isChecked())
+                    item.setChecked(false);
+                else
+                    item.setChecked(true);
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new InboxFragment()).commit();
                 getSupportActionBar().setTitle("Gelen Kutusu");
                 break;
             case R.id.havuzdakiItem:
+                if (item.isChecked())
+                    item.setChecked(false);
+                else
+                    item.setChecked(true);
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new SentFragment()).commit();
                 getSupportActionBar().setTitle("Havuzdaki İşler");
                 break;
             case R.id.ParkItem:
+                if (item.isChecked())
+                    item.setChecked(false);
+                else
+                    item.setChecked(true);
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new DraftFragment()).commit();
                 getSupportActionBar().setTitle("Park Edilen İşler");
                 break;
             case R.id.İşaretlediğinItem:
+                if (item.isChecked())
+                    item.setChecked(false);
+                else
+                    item.setChecked(true);
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new TrashFragment()).commit();
                 getSupportActionBar().setTitle("İşaretlediğin İşler");
                 break;
             case R.id.DiğerItem:
+                if (item.isChecked())
+                    item.setChecked(false);
+                else
+                    item.setChecked(true);
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new CalendarFragment()).commit();
                 getSupportActionBar().setTitle("Diğer Süreçlerden Beklediklerim");
                 break;
             case R.id.GidenItem:
+                if (item.isChecked())
+                    item.setChecked(false);
+                else
+                    item.setChecked(true);
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new SentFragment()).commit();
                 getSupportActionBar().setTitle("Giden Kutusu");
                 break;
             case R.id.ic_is_olustur:
+                if (item.isChecked())
+                    item.setChecked(false);
+                else
+                    item.setChecked(true);
                 Intent intent = new Intent(DrawerActivity.this, SendMail.class);
                 startActivity(intent);
                 break;
