@@ -7,7 +7,7 @@ import com.example.webservicetutorial.dbentities.entities.User2
 interface AuthInterface {
 
     fun onStarted()
-    fun onSuccess()
+    fun onSuccess(user : User)
     fun onFailure(message : String)
 
 }

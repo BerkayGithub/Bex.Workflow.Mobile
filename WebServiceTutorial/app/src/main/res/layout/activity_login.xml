@@ -7,7 +7,7 @@
     <data>
         <variable
             name="viewmodel"
-            type="com.example.webservicetutorial.LoginViewModel" />
+            type="com.example.webservicetutorial.auth.LoginViewModel" />
     </data>
 
 <androidx.coordinatorlayout.widget.CoordinatorLayout

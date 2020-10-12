@@ -6,9 +6,7 @@ import retrofit2.Response
 
 class UserRepository {
 
-    /*suspend fun userLogin(email: String, password: String) : Response<AuthResponse> {
+    suspend fun userLogin(email: String, password: String) : Response<AuthResponse> {
         return MyAPI().userlogin(0,0,email, password,"System")
     }
-
-     */
 }
