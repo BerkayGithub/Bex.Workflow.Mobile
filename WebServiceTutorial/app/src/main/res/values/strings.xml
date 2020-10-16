@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">WebServiceTutorial</string>
+    <string name="profil">Profil</string>
+    <string name="adres_bilgileri">Adres Bilgileri</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
 </resources>

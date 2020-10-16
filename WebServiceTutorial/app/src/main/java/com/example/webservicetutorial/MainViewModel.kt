@@ -4,6 +4,7 @@ import android.content.Context
 import android.widget.Toast
 import androidx.lifecycle.ViewModel
 import com.example.webservicetutorial.MVVMApplication.Companion.UserID
+import com.example.webservicetutorial.MVVMApplication.Companion.userAPIKey
 import com.example.webservicetutorial.repository.WorkflowServiceRepository
 import com.example.webservicetutorial.util.Coroutines
 
@@ -37,6 +38,7 @@ class MainViewModel : ViewModel() {
             if (userResponse.isSuccessful){
                 if(userResponse.body()?.Result == true) {
                     userApiKey = userResponse.body()?.Value?.ApiKey
+                    userAPIKey = userApiKey
                     Toast.makeText(context, "User ApiKey is : $userApiKey", Toast.LENGTH_LONG).show()
                 }else{
                     Toast.makeText(context,"Error occured while getting the user api key!", Toast.LENGTH_LONG).show()

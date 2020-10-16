@@ -1,6 +1,7 @@
 package com.example.webservicetutorial
 
 import android.app.Application
+import com.example.webservicetutorial.repository.ContactServiceRepository
 import com.example.webservicetutorial.repository.UserRepository
 import com.example.webservicetutorial.repository.WorkflowServiceRepository
 import org.kodein.di.Kodein
@@ -17,9 +18,12 @@ class MVVMApplication : Application(), KodeinAware {
 
         bind() from provider { UserRepository() }
         bind() from provider { WorkflowServiceRepository() }
+        bind() from provider { ContactServiceRepository() }
     }
 
     companion object{
+        var userAPIKey : String? = null
+
         var UserID: Int? = null
         var username: String? = null
         var UserFirstName: String? = null
